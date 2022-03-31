@@ -1,7 +1,8 @@
 #include "binary_trees.h"
 
 /**
- * recursive_depth - function that finds the lowest common ancestor of two nodes
+ * recursive_depth - function that finds the lowest common
+ * ancestor of two nodes
  *
  * @tree: tree root
  * Return: binary tree
