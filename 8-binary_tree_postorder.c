@@ -11,14 +11,16 @@
 
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
+	/* Postorder (Left, Right, Root) */
 	if (tree == NULL || (*func) == NULL)
 	{
 		return;
 	}
-	
+	/* first recur on left subtree */
 	binary_tree_postorder(tree->left, (*func));
+	/* then recur on right subtree */
 
 	binary_tree_postorder(tree->right, (*func));
-
+	/* now deal with the node */
 	(*func)(tree->n);
 }
