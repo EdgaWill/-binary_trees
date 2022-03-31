@@ -7,7 +7,7 @@
  * @array: input array of integers
  * @size: size of array
  * @mode: 1 to adding on the left, 2 to adding on the right
- * Return: no return
+ * Return: return
  */
 void create_tree(avl_t **node, int *array, size_t size, int mode)
 {
@@ -38,7 +38,7 @@ void create_tree(avl_t **node, int *array, size_t size, int mode)
  *
  * @array: input array of integers
  * @size: size of array
- * Return: pointer to the root
+ * Return: to the root
  */
 avl_t *sorted_array_to_avl(int *array, size_t size)
 {
